@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+ 	android:id="@+id/relativeLayout"
+ 	android:layout_width="match_parent"
+ 	android:layout_height="match_parent"
+ 	android:background="@drawable/background"
+ 	android:gravity="fill" >
+ 	
+ 	<com.google.android.maps.MapView
+ 		android:id="@+id/mapView"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="fill_parent"
+ 	
+ 		android:apiKey="0SKFnG35NRjyFWXm1B4yNV86sTJIhN39_7C3Kug"
+ 		android:clickable="true"
+ 		android:enabled="true" />
+
+ 	<ZoomControls
+ 		android:id="@+id/zoomControls"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:layout_alignBottom="@+id/mapView"
+ 		android:layout_alignRight="@+id/mapView"
+ 		android:layout_marginRight="10px" />
+
+</RelativeLayout>
+

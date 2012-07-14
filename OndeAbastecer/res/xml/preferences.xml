@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Informações de Consumo">
+	  <ListPreference android:title="Combustível"
+            android:key="combustivelPreferencial" 
+            android:summary="Seleciona o combustível que irá aparecer no mapa" 
+            android:entries="@array/tipoCombustivelNome"
+            android:entryValues="@array/tipoCombustivelId" 
+            android:defaultValue="gasolina" />
+	  
+	  <EditTextPreference 
+	  	android:title="Consumo - Gasolina"
+		android:key="consumoGasolina"
+		android:summary="Consumo (km/L) de gasolina"
+		android:dialogTitle="Informe seu consumo (km/L) de gasolina"
+		android:defaultValue="10.0"
+		android:inputType="numberDecimal"/>
+	  
+	  <EditTextPreference 
+	  	android:title="Consumo - Etanol"
+		android:key="consumoAlcool"
+		android:summary="Consumo (km/L) de etanol"
+		android:dialogTitle="Informe seu consumo (km/L) de etanol"
+		android:defaultValue="7.0"
+		android:inputType="numberDecimal"/>
+	  
+	  <EditTextPreference 
+	  	android:title="Consumo - Diesel"
+		android:key="consumoDiesel"
+		android:summary="Consumo (km/L) de diesel"
+		android:dialogTitle="Informe seu consumo (km/L) de diesel"
+		android:defaultValue="10.0"
+		android:inputType="numberDecimal"/>
+	  
+	  
+  
+  </PreferenceCategory>
+  <PreferenceCategory android:title="Preferências de Pesquisa">
+       <com.sap.appsexperience.resources.SeekBarPreference  
+                android:key="raioPesquisa"
+                android:defaultValue="5"
+                android:title="Raio de pesquisa" />   
+  </PreferenceCategory>
+
+</PreferenceScreen>

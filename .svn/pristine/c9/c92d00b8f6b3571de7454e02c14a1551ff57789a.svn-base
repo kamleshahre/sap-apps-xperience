@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="90dip"
+        android:stretchColumns="1"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_header" >
+        <TableRow>
+
+        <ImageView
+            android:id="@+id/stationFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="left"
+            android:layout_margin="10dp"
+            />
+		<LinearLayout
+		    android:layout_width="200sp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical"
+	        android:layout_marginTop="10dp"
+		    >
+		    <TextView
+            android:id="@+id/nomePosto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Posto"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:lines="2" />
+		    <TextView
+            android:id="@+id/enderecoPosto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Endereço"
+            android:textStyle="italic"
+            android:textSize="14dp" 
+            android:lines="2"  />
+		</LinearLayout>
+        
+
+        <ToggleButton android:id="@+id/AdicionarFavorito"
+        	android:textOn="" android:textOff="" 
+        	android:layout_alignParentLeft="true"
+        	android:gravity="right"
+        	android:background="@drawable/btn_favorito"
+        	android:layout_marginTop="15dp"
+        	android:layout_marginRight="10dp"
+        	/>
+		</TableRow>
+		
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPrecos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" 
+        android:paddingTop="5sp">
+
+        <LinearLayout
+            android:id="@+id/layoutPrecoGasolina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingRight="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblGasolina"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Gasolina"
+                android:textStyle="bold"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/valorGasolina"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="R$ 2.901"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textSize="22dip" />
+            
+            <TextView
+                android:id="@+id/dataGasolina"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00/00/00"
+                android:textStyle="italic"
+                android:textSize="10dip" />
+            <TextView
+                android:id="@+id/quemGasolina"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00/00/00"
+                android:textStyle="italic"
+                android:textSize="10dip" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/layoutPrecoAlcool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblAlcool"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Etanol"
+                android:textStyle="bold"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/valorAlcool"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="R$ 2.034"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="22dip" />
+            
+            <TextView
+                android:id="@+id/dataAlcool"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00/00/00"
+                android:textStyle="italic"
+                android:textSize="10dip" />
+            <TextView
+                android:id="@+id/quemAlcool"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00/00/00"
+                android:textStyle="italic"
+                android:textSize="10dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutPrecoDiesel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblDiesel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Diesel"
+                android:textStyle="bold"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/valorDiesel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="R$ 1.934"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="22dip" />
+            
+            <TextView
+                android:id="@+id/dataDiesel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00/00/00"
+                android:textStyle="italic"
+                android:textSize="10dip" />
+            <TextView
+                android:id="@+id/quemDiesel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00/00/00"
+                android:textStyle="italic"
+                android:textSize="10dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAbastecer"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/bt_abastecer"
+        android:drawablePadding="-15dp"
+        android:onClick="abastecerAqui"
+        android:text="Abastecer Aqui!" />
+
+</LinearLayout>

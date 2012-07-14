@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sap.appsexperience"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="10" />
+    
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        
+        <uses-library android:name="com.google.android.maps"/>
+        
+        <activity
+            android:label="Buscar Postos"
+            android:name=".OndeAbastecerActivity" 
+            android:theme="@android:style/Theme.Light"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity
+        	android:name=".ConfigActivity"
+        	android:theme="@android:style/Theme.Light.NoTitleBar"
+        	android:configChanges="orientation"
+        	android:screenOrientation="portrait" />
+        
+        <activity
+			android:name=".StationsActivity"
+			android:theme="@android:style/Theme.Light"
+			android:configChanges="orientation"
+			android:screenOrientation="portrait" />
+        
+        <activity
+        	android:name=".MapActivityTab"
+        	android:theme="@android:style/Theme.Light.NoTitleBar"
+        	android:configChanges="orientation"
+        	android:screenOrientation="portrait">
+            
+        	<intent-filter>
+            	<category android:name="android.intent.category.EMBED"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>            
+        </activity>
+        
+        <activity
+        	android:name=".AlertasActivity"
+        	android:theme="@android:style/Theme.Light.NoTitleBar"
+        	android:configChanges="orientation"
+        	android:screenOrientation="portrait" />
+        
+        <activity
+        	android:name=".DetalhePostoActivity"
+        	android:theme="@android:style/Theme.Light.NoTitleBar"
+        	android:configChanges="orientation"
+        	android:screenOrientation="portrait" />
+        
+        <activity
+        	android:name=".AbastecerActivity"
+			android:theme="@android:style/Theme.Dialog"
+			android:configChanges="orientation"
+			android:screenOrientation="portrait" />
+        
+        <activity
+        	android:name=".SplashScreenActivity"
+			android:theme="@style/Theme.Transparent"
+			android:configChanges="orientation"
+			android:screenOrientation="portrait" >
+        	
+        	<intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

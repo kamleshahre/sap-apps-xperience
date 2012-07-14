@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 
+    <item android:id="@+id/alertas"
+          android:icon="@drawable/mn_alerts"
+          android:title="@string/alertas" 
+          /> -->
+     
+    <item android:id="@+id/config"
+          android:icon="@drawable/mn_settings"
+          android:title="@string/config" />
+    
+</menu>

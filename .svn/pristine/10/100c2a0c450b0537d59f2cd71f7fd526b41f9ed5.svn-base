@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>NovaInstalacao</servlet-name>
+		<servlet-class>com.sap.appsexperience.NovaInstalacaoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NovaInstalacao</servlet-name>
+		<url-pattern>/ondeabastecer/novaInstalacao</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProcurarPosto</servlet-name>
+		<servlet-class>com.sap.appsexperience.DicaPostoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProcurarPosto</servlet-name>
+		<url-pattern>/ondeabastecer/dica/procurar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProcurarPosto</servlet-name>
+		<servlet-class>com.sap.appsexperience.DicaPostoAvaliarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProcurarPosto</servlet-name>
+		<url-pattern>/ondeabastecer/dica/avaliar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProcurarPosto</servlet-name>
+		<servlet-class>com.sap.appsexperience.DicaPostoCadastrarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProcurarPosto</servlet-name>
+		<url-pattern>/ondeabastecer/dica/cadastrar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProcurarPosto</servlet-name>
+		<servlet-class>com.sap.appsexperience.ProcurarPostoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProcurarPosto</servlet-name>
+		<url-pattern>/ondeabastecer/posto/procurar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Abastecer</servlet-name>
+		<servlet-class>com.sap.appsexperience.AbastecerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Abastecer</servlet-name>
+		<url-pattern>/ondeabastecer/posto/abastecer</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CadastrarPosto</servlet-name>
+		<servlet-class>com.sap.appsexperience.CadastrarPostoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CadastrarPosto</servlet-name>
+		<url-pattern>/ondeabastecer/posto/cadastrar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PerfilUsuario</servlet-name>
+		<servlet-class>com.sap.appsexperience.PerfilUsuarioServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PerfilUsuario</servlet-name>
+		<url-pattern>/ondeabastecer/usuario/reputacao</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CadastrarPosto</servlet-name>
+		<servlet-class>com.sap.appsexperience.CadastrarPostoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CadastrarPosto</servlet-name>
+		<url-pattern>/ondeabastecer/posto/cadastrar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CarregarDadosANP</servlet-name>
+		<servlet-class>com.sap.appsexperience.CarregarDadosANPServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CarregarDadosANP</servlet-name>
+		<url-pattern>/carregaranp</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

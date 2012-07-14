@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+    <LinearLayout
+        android:id="@+id/layoutIniSetup"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		android:padding="0dp" 
+		android:visibility="gone">
+		<TextView 
+			    android:layout_height="wrap_content"  
+				android:layout_width="fill_parent"
+				android:paddingLeft="5dip"
+				android:paddingTop="50dip"
+				android:layout_gravity="top"
+				android:gravity="center"  
+				android:text="Olá!" 
+			 	android:textSize="25dip"
+			 	android:lines="1"
+			 	android:textStyle="bold"
+			 />
+        
+		<TextView 
+			    android:layout_height="wrap_content"  
+				android:layout_width="fill_parent"
+				android:paddingLeft="5dp"
+				android:paddingTop="20dp"
+				android:layout_gravity="center"
+				android:gravity="center"  
+				android:text="Escolha um apelido e comece a economizar" 
+			 	android:textSize="15dp"
+			 	android:lines="2"
+			 	android:textStyle="bold"
+			 />
+			<EditText
+                android:id="@+id/txtApelidoCadastro"
+                android:maxLength="20"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" 
+                >
+            </EditText>
+            <TextView 
+                android:id="@+id/txtErroCadastro"
+                android:visibility="gone"
+			    android:layout_height="wrap_content"  
+				android:paddingLeft="5dp"
+				android:paddingTop="20dp"
+				android:layout_gravity="center_vertical"  
+				android:text="=( Apelido em uso, escolha outro." 
+			 	android:layout_width="match_parent"
+			 	android:textSize="10dp"
+			 	android:textColor="@android:color/tertiary_text_dark"
+			 	android:lines="1"
+			 	android:textStyle="italic"
+			 />
+            <Button
+		        android:id="@+id/btnNovoUsuario"
+		        android:gravity="center"
+		        android:layout_width="250dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="15dp"
+		        android:drawableLeft="@drawable/bt_usuario"
+		        android:drawablePadding="-15dp"
+		        android:onClick="novoUsuario"
+		        android:text="Encontrar o melhor preço" />
+            
+	</LinearLayout>
+    
+	<LinearLayout
+	    android:id="@+id/layoutMainTabs"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:padding="0dp" 
+		android:visibility="gone">
+
+		<FrameLayout
+			android:id="@android:id/tabcontent"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="0.72" >
+
+		</FrameLayout>
+
+	  
+		    
+		<TabWidget
+			android:id="@android:id/tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			>
+		</TabWidget>
+
+	</LinearLayout>
+
+</TabHost>

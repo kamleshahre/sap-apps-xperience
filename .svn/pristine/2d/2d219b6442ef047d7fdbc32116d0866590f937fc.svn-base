@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:paddingTop="20dip"
+        android:id="@+id/topBtns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:checkedButton="@+id/gsl" 
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+        
+        <RadioButton
+            android:id="@+id/rbGsl"
+            android:background="@drawable/btn_radio_left"
+            android:width="80dip" android:height="70dip" android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbAlc"
+            android:background="@drawable/btn_radio_center" 
+            android:width="80dip" android:height="70dip" />
+
+        <RadioButton
+            android:id="@+id/rbDie"
+            android:background="@drawable/btn_radio_right"
+            android:width="80dip" android:height="70dip" />
+    </RadioGroup>
+    
+    <TableLayout android:stretchColumns="1" 
+        		android:layout_width="fill_parent" 
+        		android:layout_height="wrap_content"
+        		android:paddingTop="30dip">
+        <TableRow>
+            <TextView
+		        android:id="@+id/lblValorLitro"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="$/L"
+		        android:gravity="center"
+		        android:paddingLeft="15dip"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/txtValorLitro"
+                android:maxLength="6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" 
+                android:gravity="right"
+                >
+            </EditText>
+            
+        </TableRow>
+        <TableRow android:paddingTop="30dip">
+             <TextView
+		        android:id="@+id/lblLitros"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Litros"
+		        android:gravity="center"
+		        android:paddingLeft="15dip"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/txtLitros"
+                android:maxLength="6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" 
+                android:enabled="false"
+                android:gravity="right"
+                >
+            </EditText>
+            
+        </TableRow>
+        <TableRow android:paddingTop="10dip">
+             <TextView
+		        android:id="@+id/lblValorTotal"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Valor Total"
+		        android:gravity="center"
+		        android:paddingLeft="15dip"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/txtValorTotal"
+                android:maxLength="6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" 
+                android:gravity="right"
+                >
+            </EditText>
+            
+        </TableRow>
+       
+    </TableLayout>
+    
+   	<Button
+        android:id="@+id/btnAbastecer"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/bt_abasteci"
+        android:drawablePadding="-15dp"
+        android:onClick="abasteci"
+        android:text="Abasteci!" />
+
+</LinearLayout>
